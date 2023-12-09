@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }}</title>
+	<script>
+		function izquierda() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', "izquierda", true);
+			xhr.send();}
+		function derecha() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', "derecha", true);
+			xhr.send();}
+		function adelante() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', "adelante", true);
+			xhr.send();}
+		function atras() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', "atras", true);
+			xhr.send();}
+		function detener() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', "detener", true);
+			xhr.send();}
+	</script>
+   </head>
+
+   <body>
+	<h2>V 1.1</h2>
+	<table>
+		<tr><td>
+			<table>
+				<tr><td><button onclick="izquierda()">Izquierda</button>
+				</td><td><button onclick="derecha()">Derecha</button>
+				</td></tr>
+			</table>
+		</td><td>
+			<table>
+				<tr><td><button onmousedown="adelante()" onmouseup="detener()">Adelante</button>
+				</td></tr>
+				<tr><td><button onmousedown="atras()" onmouseup="detener()">Atras</button>
+				</td></tr>
+			</table>
+		</td></tr>
+	</table>
+   </body>
+</html>
